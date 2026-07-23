@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <tittle>Happy Birthday </tittle>
+    <title>Birthday Pin</title>
 </head>
 
-<body style="background-color:lavender;text-align:center;">
+<body>
+    <center>
 
-    <h1 style="color:purple;"> Happy Birthday! </h1>
+        <h1>🎁 Secret Birthday Gift 🎁</h1>
 
-    <h2>Wishing you happiness, health and success!</h2>
+        <p>Enter Your Birthday (DDMM)</p>
 
-    <p>May all your dreams come true. ✨</p>
+        <input type="password" id="pin" placeholder="Example: 1705">
+
+        <br><br>
+
+        <button onclick="checkPin()">Open Gift</button>
+
+        <p id="message"></p>
+
+    </center>
+
+    <script>
+
+        function checkPin() {
+
+            let pin =
+    document.getElementById("pin").value;
+
+            if (pin == "1705") {
+
+                window.location.href =
+    "gift.html";
+            } else {
+
+    document.getElementById("message").innerHTML ="✖ Wrong Birthday";
+
+            }
+            
+        }
+    </script>
 
 </body>
+
 </html>
 
     
